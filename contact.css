@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/* タイトル */
+.all_border_title ._head {
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 16px;
+  color: #222020;
+}
+
+.all_border_title ._main {
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  font-size: 80px;
+  color: #222020;
+  margin-top: 10px;
+}
+
+/* 全体 */
+.top_news {
+  position: relative;
+}
+
+.content {
+  background: #fff;
+  margin-top: 200px;
+  padding: 0px 0 175px 0;
+}
+
+._inner {
+  width: 90%;
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.all_border_title .all_square_anime {
+  padding-right: 0.1em;
+}
+
+._left {
+  width: 300px;
+  position: relative;
+}
+
+._left_inner {
+  position: sticky;
+  top: 200px;
+}
+
+._right {
+  width: calc(100% - 340px);
+  max-width: 800px;
+}
+
+/* tab */
+.tab {
+  margin: 68px 0 0;
+  font-weight: 600;
+}
+
+.tab li {
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* creater */
+.creater {
+  background-color: #fafafa;
+  padding: 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.creater li:nth-child(1) {
+  padding-left: 15px;
+  font-size: 11px;
+  width: 200px;
+  line-height: 1.5;
+}
+
+.creater li:nth-child(1)::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 9px;
+  background-color: #191919;
+  margin-top: -49.0px;
+}
+
+.cosugi {
+  margin-top: 8px;
+  font-size: 24px;
+  width: 200px;
+}
+
+.creater li:nth-child(2) {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.creater li:nth-child(3) {
+  width: 200px;
+}
+
+.creater li:nth-child(4) {
+  margin-top: 40px;
+}
+
+.creater li a {
+  padding: 0 20px;
+  display: flex;
+  background-color: #adadad;
+  border-radius: 12px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  align-items: center;
+  padding: 8px 15px;
+  width: 240px;
+  transition: all 0.25s;
+}
+
+.creater li a:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.creater li a:hover {
+  background-color: #E31E23;
+}
+
+.creater li img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+/* form */
+.form-area {
+  margin-top: 30px;
+  background-color: #fafafa;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+}
+
+.form-area dt {
+  width: 200px;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.form-area dt p {
+  font-size: 11px;
+}
+
+.form-area dt .required::after {
+  content: '必須';
+  font-size: 11px;
+  color: #E31E23;
+  margin-left: 10px;
+}
+
+.form-area dd {
+  width: calc(100% - 200px);
+  padding: 15px 0;
+}
+
+.input-text {
+  width: 100%;
+  max-width: 280px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.radio-button {
+  display: block;
+  font-weight: 500;
+}
+
+.radio-button:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.radio-button input {
+  margin-right: 8px;
+  accent-color: #E31E23;
+}
+
+.message {
+  width: 100%;
+  height: 260px;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+}
+
+.confirm-text {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+/* thanks */
+.thanks {
+  margin-top: 30px;
+  background-color: #fafafa;
+  padding: 30px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-left: 50px;
+}
+
+.thanks h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+._link {
+  margin: 40px 0 20px 0;
+}
+
+.all_button {
+  width: 250px;
+  height: 50px;
+  padding: 0 20px 0 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px #E31E23 solid;
+  background-color: #fff;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #E31E23;
+  transition: 0.4s ease;
+}
+
+.all_button span {
+  width: 100%;
+  position: static;
+  display: block;
+}
+
+.all_button:after {
+  content:"";
+  background: url(/images/arrow.red.png) no-repeat center/6px 10px;
+  width: 6px;
+  height: 10px;
+  display: block;
+}
+
+.all_button:hover {
+  background: #E31E23;
+  border-color: #E31E23;
+  color: #fff;
+  opacity: 1;
+}
+
+.all_button:hover:after {
+  animation:arrow_animation 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  background-image: url(/images/arrow.white.png);
+}
+
+@keyframes arrow_animation {
+  30%,35%{
+    opacity:0
+  }33%{
+    transform:translateX(0.3rem)
+  }34%,35%{
+    transform:translateX(-1rem)
+  }100%{
+    transform:translateX(0)
+  }
+}
+
